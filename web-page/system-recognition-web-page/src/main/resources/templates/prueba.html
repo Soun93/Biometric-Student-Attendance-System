@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Prueba de fondo y divs</title>
+    <style>
+      /* Estilo para el fondo */
+      body {
+        background-color: #355B3E;
+      }
+      
+      /* Estilos para el contenedor de la tarjeta de inicio de sesión */
+      .card-login {
+        margin: 0 auto; /* Esto centra el contenedor horizontalmente */
+        width: 80%; /* Esto establece el ancho del contenedor */
+        display: flex;
+        justify-content: space-between; /* Esto divide el contenedor en 2 divs */
+        border-radius: 10px; /* Esto agrega bordes redondeados */
+        overflow: hidden; /* Esto asegura que el contenido no sobresalga de los bordes redondeados */
+      }
+      
+      /* Estilos para el primer div */
+      .card-login > div:first-child {
+        background-color: #FFFFFF; /* Color blanco */
+        width: 50%;
+        padding: 20px;
+      }
+      
+      /* Estilos para el segundo div */
+      .card-login > div:last-child {
+        background-color: #F5DBC4;
+        width: 50%;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-login">
+      <div>
+        <!-- Contenido del primer div aquí -->
+      </div>
+      <div>
+        <!-- Contenido del segundo div aquí -->
+      </div>
+    </div>
+  </body>
+</html>
+

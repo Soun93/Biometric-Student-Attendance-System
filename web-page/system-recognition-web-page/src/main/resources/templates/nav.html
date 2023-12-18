@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav</title>
+    <link rel="stylesheet" href="../css/nav.css" />
+</head>
+<body>
+        <div class="nav" id="nav">
+            <div id="nav-container">
+                <div class="logo-nav">
+                    <img th:src="@{/img/ULSA - Rosado-svg.svg}" alt="ULSA - Rosado"/>
+                </div>
+    
+    
+    
+                <div class="options-nav">
+                    <div class="option">
+                        <img th:src="@{/img/User_Empty.svg}" alt="User_img"/>
+                        <h4>Usuario</h4>
+                    </div>
+                        
+                    <div class="option">
+                        <img th:src="@{/img/Phone.svg}" alt="contact_img"/>
+                        <h4>Contacto</h4>
+                    </div>
+                    <div class="option">
+
+                        <img th:src="@{/img/Invoice.svg}" alt="assit_img"/>
+                        <h4>Asistencia</h4>
+                    </div>
+                    <div class="option">
+                        <img th:src="@{/img/Circle_Warning.svg}" alt="inf_img"/>
+                        <h4>Información</h4>
+                    </div>
+                </div>
+    
+    
+                
+                <div class="button">
+                    <img th:src="@{/img/Chevron_Right_XL.svg}" alt="Ocultar nav" id="onArrow" />
+                </div>
+            </div>
+
+            <img th:src="@{/img/Chevron_Right_XL.svg}" alt="Ver nav" id="offArrow" />
+
+    <script th:src="@{/script/nav.js}"></script>
+</body>
+</html>

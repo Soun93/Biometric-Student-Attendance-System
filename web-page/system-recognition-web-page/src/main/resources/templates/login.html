@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Asistencia</title>
+    <link rel="stylesheet" th:href="@{/css/login.css}" />
+</head>
+<body>
+    <div class="container">
+        <div class="card-login">
+            <div class="login">
+                <div class="content-login">
+                    <img th:src="@{/img/ULSA - Verde.svg}" alt="Logo ULSA - Verde" />
+                    <form method="post" th:action="@{/login}">
+                        <h2>Bienvenido al Sistema de Asistencia Automatizado</h2>
+                        <label for="username">Username</label>
+                        <input type="text" name="username" placeholder="manuelito_123x" required>
+                        <label for="password">Contraseña</label>
+                        <input type="password" name="password" placeholder="Inserte su contraseña" required>
+                        <div class="options-login">
+                            <div>
+                                <input type="checkbox" name="remember-me" value="valor1">
+                                <label for="remember-me">Recuerdame</label>                       
+                            </div>
+                            <div>
+                                <a href="#">¿Has olvidado tu contraseña?</a>
+                            </div>
+                        </div>
+                        <button>Login</button>
+                    </form>
+                </div>
+            </div>
+            <div class="image">
+                <img th:src="@{/img/Lema-2023.svg}" alt="Lema-2023" />
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
